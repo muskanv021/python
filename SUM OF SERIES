@@ -1,0 +1,41 @@
+i=1
+num = int(input("enter a number"))
+sum=0
+
+while(i<=num):
+  sum=sum+i
+  print(i,end="")
+  if(i<num):
+    print("+",end="")
+  i+=1
+print("=",sum)
+
+OUTPUT-4
+enter a number10
+1+2+3+4+5+6+7+8+9+10= 55
+
+
+
+-----------------#####################33--------------------------
+
+
+i=1
+num = int(input("enter a number"))
+sum=0
+
+while(i<=num):
+  sum=sum+i
+  print(i,end="")
+
+  if(i<num):
+    print("+",end="")
+  i+=1
+print("=",sum)
+
+
+OUTPUT-
+enter a number17
+1+2+3+4+5+6+7+8+9+10+11+12+13+14+15+16+17= 153
+
+
+----------------------######################-----------------------
