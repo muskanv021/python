@@ -1,0 +1,47 @@
+num=int(input("enter any number"))
+reverse=0
+length=0
+counteven=0
+countodd=0
+sumeven=0
+sumodd=0
+while(num>0):
+  length+=1
+  last_digit = num%10
+  reverse=reverse*10+last_digit
+  num//=10
+print(length,"length is")
+
+print("Reverse number is:-", reverse)
+i=1
+while(reverse>0):
+  last_digit =reverse%10
+
+  if(last_digit%2==0):
+      print(last_digit,"is even")
+      counteven+=1
+      sumeven=sumeven+last_digit
+  else:
+    print(last_digit,"is odd")
+    countodd+=1
+    sumodd=sumodd+last_digit
+  reverse//=10
+print("total count of the even number is ",counteven)
+print("sum of the even number is :-",sumeven)
+print("total count of the odd number is ",countodd)
+print("sum of the odd number is :-",sumodd)
+
+
+
+OUTPUT-
+enter any number7879
+4 length is
+Reverse number is:- 9787
+7 is odd
+8  is even
+7 is odd
+9 is odd
+total count of the even number is  1
+sum of the even number is :- 8
+total count of the odd number is  3
+sum of the odd number is :- 23
