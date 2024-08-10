@@ -1,0 +1,42 @@
+num=int(input("enter the number"))
+length=0
+reverse=0
+sum=0
+user_input=num
+while(num>0):
+  length+=1
+  last_digit=num%10
+  reverse=reverse*10+last_digit
+  num//=10
+print("Reverse value is:-",reverse)
+print("length of the",reverse,"is",length)
+i=1
+while(reverse>0):
+     last_digit=reverse%10
+     print(last_digit,end="")
+     power=length
+     sum=sum+last_digit**power
+     if(i<length):
+      print("+",end="")
+      i+=1
+     reverse//=10
+print("=",sum)
+print("Sum of the total value is:-",sum)
+if(user_input==sum):
+     print("It is a Armstrom number")
+     print(user_input,"is equal to",sum)
+else:
+     print("It is not a armstrom number")
+     print(user_input,"is not equal to",sum)
+
+
+
+OUTPUT-
+enter the number123
+Reverse value is:- 321
+length of the 321 is 3
+1+2+3= 36
+Sum of the total value is:- 36
+It is not a armstrom number
+123 is not equal to 36
+  
