@@ -1,0 +1,24 @@
+i=1
+num=int(input("Enter a number "))
+while(num>=i):
+  print(num-1,end="")
+  num-=1
+
+------------################-----------------------------
+
+num = int(input("Enter a number "))
+reverse_num = 0
+
+while (num > 0):
+    a = num % 10
+    reverse_num = reverse_num * 10 + a
+    # print("reverse_num is:",reverse_num)
+    num = num // 10 # num= int(num/10)
+    # print("The number is:-",num)
+
+print(reverse_num)
+
+
+
+----------------------######################3-------------------------
+
