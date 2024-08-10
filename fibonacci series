@@ -1,0 +1,14 @@
+
+a=0
+b=1
+c=a+b
+num=int(input("Enter a number"))
+
+while(a<=num):
+  print(a,end="")
+  if(a<50):
+    print(",",end="")
+  a=b
+  b=c
+  c=a+b
+
